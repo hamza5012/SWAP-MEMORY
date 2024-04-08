@@ -1,9 +1,13 @@
-#!/bin/bash
 # Get current swap usage for all running processes
-# REUSE BY HAMZA JAVED
+# Erik Ljungstrom 27/05/2011
+# Modified by Mikko Rantalainen 2012-08-09
 # Pipe the output to "sort -nk3" to get sorted output
+# Modified by Marc Methot 2014-09-18
 # removed the need for sudo
+#After Modified By M.Hamza Javed
+#8/4/24
 
+echo"SCRIPT FOR CHECKING SWAP MEMORY IN LINUX"
 HAMZA=0
 OVERALL=0
 for DIR in `find /proc/ -maxdepth 1 -type d -regex "^/proc/[0-9]+"`
